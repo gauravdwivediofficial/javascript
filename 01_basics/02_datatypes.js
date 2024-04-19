@@ -20,10 +20,10 @@ let isLoggedIn = true // boolean data type
 // undefined => not defined value
 // symbol => unique 
 // object => 
-console.log(typeof(age))
-console.log(typeof "Gaurav")
-console.log(typeof null)
-console.log(typeof undefined)
+console.log(typeof(age)) // number
+console.log(typeof "Gaurav") // string
+console.log(typeof null) // object
+console.log(typeof undefined) // undefined
 
 
 
