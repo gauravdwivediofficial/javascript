@@ -31,13 +31,23 @@ if (userEmail3.length === 0){
 const emptyObject = {}
 
 if(Object.keys(emptyObject).length===0){
-    console.log("Object is Empty");
+    // console.log("Object is Empty");
 }
 
+// Nullish Coalescing Operator(??) : null, undefined
 
+let val1;
 
+// val1 = 5 ?? 10
+// val1 = null ?? 10
+// val1 = undefined ?? 20
+val1 = null ?? 31 ?? 10
 
+// console.log(val1);
 
+// Terniry Operator
+
+val1 === 31 ? console.log(true) : console.log(false);
 
 
 
