@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node List</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const parent = document.createElement('div')
+        console.log(parent);
+        parent.className = 'parent'
+        parent.id = Math.round(Math.random() * 10 + 1)
+        parent.setAttribute("title", 'generated title')
+        parent.style.backgroundColor = 'green'
+        parent.style.padding = '12px'
+        // div.innerHTML = "Gaurav Dwivedi"
+        const addText = document.createTextNode("Gaurav Dwivedi")
+        parent.appendChild(addText)
+        document.body.appendChild(parent)
+    </script>
+</body>
+</html>
