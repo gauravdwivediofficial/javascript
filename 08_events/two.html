@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayName = function(){
+        console.log("Gaurav")
+    }
+    const changeHeading = function(){
+        document.querySelector('h1').innerHTML = 'Welcome to RadaR Coding'
+    }
+    setTimeout(sayName, 2000)
+    const stop = setTimeout(changeHeading, 2000)
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(stop)
+    })
+</script>
+</html>
+
+
+<!-- // Notes -->
+
+<!-- JavaScript is Synchronous Language and also single threaded language -->
+
+<!-- Blcoking Code -->
+<!-- Block the flow of Program -->
+<!-- Read file Sync -->
+<!-- Vs -->
+<!-- Non-Blocking Code -->
+<!-- Do not block code execution
+Read file Async -->
+
+
+
+
+
