@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is heading</h1>
+    
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <p></p>
+</body>
+<script>
+    let intervalId;
+
+    const startCountdown = function(){
+        intervalId = setInterval(addInPara, 1000)
+        function addInPara(){
+            document.querySelector('p').innerHTML = Date.now()
+        }
+    }
+    const stopCountdown = function(){
+        clearInterval(intervalId)
+        intervalId = null
+    }
+    document.querySelector('#start').addEventListener('click', startCountdown)
+    document.querySelector('#stop').addEventListener('click', stopCountdown)
+    
+</script>
+</html>
